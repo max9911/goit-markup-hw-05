@@ -316,7 +316,6 @@ button {
   background-color: var(--main-white);
   padding-top: 120px;
   padding-bottom: 120px;
-  
 }
 
 .secthree-title {
@@ -416,7 +415,6 @@ button {
   justify-content: center;
   flex-shrink: 0;
   gap: 24px;
-  
 }
 
 .client-link {
@@ -431,24 +429,20 @@ button {
   border: 1px solid var(--lightgrey);
   transition: border-color var(--hover-anim), color var(--hover-anim);
   color: var(--lightgrey);
-
 }
 .client-icon {
   fill: currentColor;
   transition: fill var(--hover-anim), color var(--hover-anim);
 }
 
-
 .client-link:hover,
 .client-link:focus {
   border-color: var(--link-hov-foc);
-  color: var(--link-hov-foc)
- 
+  color: var(--link-hov-foc);
 }
 .client-link:hover .client-icon {
   fill: var(--link-hov-foc);
   color: var(--link-hov-foc);
-  
 }
 
 /** footer **/
@@ -458,16 +452,15 @@ button {
 
   background-color: var(--main-blue);
 
-  padding-top: 101.5px;
-  padding-bottom: 189.5px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   color: var(--main-white);
   margin: 0 auto;
-  position: relative;
 }
 .footer .container {
   display: flex;
 
-  align-items: baseline;
+  justify-content: baseline;
 }
 
 .footer-logo {
@@ -512,6 +505,9 @@ button {
 .foot-one {
   margin-right: 120px;
 }
+.foot-two {
+  margin-right: 80px;
+}
 
 .footer-media {
   font-size: 16px;
@@ -551,6 +547,65 @@ button {
   fill: #f4f4fd;
 }
 
+.foot-three {
+}
+
+.foot-input-label {
+}
+.foot-input-label-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--mainbg);
+  margin-bottom: 16px;
+}
+.input-and-btn {
+  display: flex;
+  gap: 24px;
+}
+
+.foot-input {
+  padding: 8px 16px;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  outline: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--mainbg);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--white, #fff);
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.48px;
+}
+.foot-input::placeholder {
+  color: currentColor;
+}
+.foot-btn-icon {
+}
+.foot-btn {
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  border-color: transparent;
+  border-radius: 4px;
+  background: var(--logo1color);
+  color: var(--mainbg);
+
+  font-size: 16px;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
 /** backdrop **/
 
 .backdrop {
@@ -582,7 +637,10 @@ button {
   background: #fcfcfc;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-    transition: transform var(--hover-anim);
+  transition: transform var(--hover-anim);
+  padding-top: 72px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .modal-close-btn {
   position: absolute;
@@ -613,6 +671,153 @@ button {
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
   fill: var(--mainbg);
+}
+.modal-name {
+  width: 100%;
+  color: var(--main-blue);
+  text-align: center;
+  display: block;
+  width: 100%;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+.modal-label-name {
+  color: var(--lightgrey);
+  font-size: 12px;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.48px;
+}
+.modal-label {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 16px;
+
+  fill:var(--main-blue);
+  transition: fill var(--hover-anim);
+}
+.modal-input:focus + .input-icon {
+  fill: var(--logo1color);
+}
+
+.modal-input {
+  width: 360px;
+  height: 40px;
+  padding: 11px 16px 11px 38px;
+  border-radius: 4px;
+  border: 1px solid var(--main-blue);
+  transition: border-color var(--hover-anim);
+  outline: transparent;
+}
+.modal-input:focus {
+  border-color: var(--logo1color);
+}
+
+.modal-textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  color: var(--main-blue);
+  font-size: 12px;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  border: 1px solid var(--main-blue);
+  outline: transparent;
+  transition: border-color var(--hover-anim);
+}
+.modal-textarea:focus {
+  border-color: var(--logo1color);
+}
+
+.modal-textarea::placeholder{
+  color: var(--main-blue);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+}
+
+.modal-privacy-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+
+
+}
+
+.privacy-checkbox-icon {
+  width: 16px;
+  height: 16px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 2px;
+  border: 1px solid var(--main-blue);
+
+  transition: border-color var(--hover-anim), background-color var(--hover-anim) ;
+
+  
+}
+
+.privacy-checkbox:checked + .privacy-checkbox-icon{
+  border-color: #404BBF;
+  background-color: #404BBF;
+
+}
+.checkbox-icon {
+  stroke: var(--main-white);
+}
+.modal-privacy {
+  color: var(--lightgrey);
+
+  font-size: 12px;
+
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.48px;
+  
+}
+.modal-privacy-link {
+  color: var(--logo1color);
+
+  font-size: 12px;
+
+  line-height: 1.33;
+  letter-spacing: 0.48px;
+  text-decoration-line: underline;
+}
+.modal-btn {
+  margin-left: 96px;
+  border-color: transparent;
+  width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  background: var(--logo1color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  color: var(--mainbg);
+  text-align: center;
+
+  font-size: 16px;
+
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
 }
 
 /** portfolio **/
@@ -670,15 +875,14 @@ button {
   line-height: 1.5;
 
   color: var(--maincolor);
-  
 }
-
 
 .portf-item-link {
   display: block;
   transition: box-shadow var(--hover-anim);
 }
-.portf-item-link:hover {
+.portf-item-link:hover,
+.portf-item-link:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -703,7 +907,8 @@ button {
   transform: translateY(100%);
   transition: transform var(--hover-anim);
 }
-.portf-item:hover .overlay-portf {
+.portf-item-link:hover .overlay-portf,
+.portf-item-link:focus .overlay-portf {
   transform: translateY(0);
 }
 .name-container {
@@ -721,7 +926,6 @@ button {
   margin-bottom: 8px;
 }
 .row-paragf {
-  
   font-size: 16px;
   line-height: 1.5;
 
