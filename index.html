@@ -415,7 +415,7 @@
           <p class="foot-input-label-name">Subscribe</p>
           <form class="subscribe" name="subscribe">
             <label class="foot-input-label">
-              <input class="foot-input" name="foot_input" type="email" placeholder="E-mail" />
+              <input class="foot-input" name="foot-input" type="email" placeholder="E-mail" />
             </label>
             <button class="foot-btn" type="submit">
               Subscribe
@@ -440,16 +440,21 @@
         <p class="modal-name"> Leave your contacts and we will call you back </p>
 
         <form class="modal-form" name="modal_form">
-          <label class="modal-label">
-            <span class="modal-label-name">Name</span>
-            <input type="text" class="modal-input" name="user_name" />
-            <svg class="input-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-user-name"></use>
-            </svg>
-          </label>
+          <div class="form-div-one">
+            <label class="modal-label" for="user_name">
+              <span class="modal-label-name">Name</span>
+            </label>
+          </div>
+            <div class="form-div-two">
+              <input type="text" class="modal-input" name="user-name" id="user-name" />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-user-name"></use>
+              </svg>
+            </div>
+          
           <label class="modal-label">
             <span class="modal-label-name">Phone</span>
-            <input type="tel" class="modal-input" name="user_phone" />
+            <input type="tel" class="modal-input" name="user-phone" id="user-phone" />
             <svg class="input-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-user-phone"></use>
             </svg>
