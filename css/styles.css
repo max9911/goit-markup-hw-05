@@ -792,6 +792,7 @@ button {
   height: 16px;
   
   display: inline-flex;
+
   align-items: center;
   justify-content: center;
 
@@ -799,8 +800,7 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
 
   fill: transparent;
-
-  transition: border-color var(--hover-anim), background-color var(--hover-anim) ;
+  transition: background-color var(--hover-anim), fill var(--hover-anim);
 
   
 }
@@ -808,6 +808,8 @@ button {
 .privacy-checkbox:checked + .modal-privacy-checkbox .privacy-checkbox-icon{
   border-color: #404BBF;
   background-color: #404BBF;
+  border: none;
+  fill: var(--main-white);
 
 }
 .checkbox-icon {
