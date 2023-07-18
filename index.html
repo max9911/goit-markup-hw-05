@@ -477,13 +477,16 @@
                 </svg>
             </div>
           </div>
-          <label class="modal-label">
-            <span class="modal-label-name">Comment</span>
-            <textarea class="modal-textarea" name="user_comment" placeholder="Text input">
-            </textarea>
-          </label>
-          <label class="modal-privacy-checkbox">
-            <input class="privacy-checkbox visually-hidden" type="checkbox" />
+
+          <div class="form-div-four">
+            <label class="modal-label">
+              <span class="modal-label-name">Comment</span>
+              <textarea class="modal-textarea" name="user_comment" placeholder="Text input">
+              </textarea>
+            </label>
+          </div>
+          <label class="modal-privacy-checkbox" for="user-comment">
+            <input class="privacy-checkbox visually-hidden" name="user-comment" type="checkbox" id="user-comment"/>
             <span class="privacy-checkbox-icon">
               <svg class="checkbox-icon" width="10" height="8">
                 <use href="./images/icons.svg#icon-modal-checkbox"></use>
