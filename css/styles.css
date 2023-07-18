@@ -689,10 +689,7 @@ button {
   margin-bottom: 16px;
 }
 .modal-label-name {
-  color: var(--lightgrey);
-  font-size: 12px;
-  line-height: 1.17; /* 116.667% */
-  letter-spacing: 0.48px;
+
 }
 .form-div-one {
   margin-bottom: 8px;
@@ -703,14 +700,22 @@ button {
 .modal-label {
   display: block;
   width: 100%;
+  color: var(--lightgrey);
+  font-size: 12px;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.48px;
+
+  margin-bottom: 4px;
   
 
   position: relative;
 }
 .input-icon {
   position: absolute;
-  bottom: 11px;
+
   left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 
   fill:var(--main-blue);
   transition: fill var(--hover-anim);
@@ -724,9 +729,10 @@ button {
   height: 40px;
   padding: 11px 16px 11px 38px;
   border-radius: 4px;
-  border: 1px solid var(--main-blue);
+  background-color: transparent;
   transition: border-color var(--hover-anim);
   outline: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 .modal-input:focus {
   border-color: var(--logo1color);
