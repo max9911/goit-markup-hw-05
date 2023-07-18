@@ -805,7 +805,7 @@ button {
   
 }
 
-.privacy-checkbox:checked + .privacy-checkbox-icon{
+.privacy-checkbox:checked + .modal-privacy-checkbox .privacy-checkbox-icon{
   border-color: #404BBF;
   background-color: #404BBF;
 
@@ -830,6 +830,7 @@ button {
   margin-left: 96px;
   border-color: transparent;
   max-width: 169px;
+  min-width: 169px;
   height: 56px;
   padding: 16px 32px;
   border-radius: 4px;
