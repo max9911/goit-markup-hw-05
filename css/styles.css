@@ -551,6 +551,8 @@ button {
 }
 
 .foot-input-label {
+  display: flex;
+  gap: 24px;
 }
 .foot-input-label-name {
   font-size: 16px;
@@ -560,10 +562,7 @@ button {
   color: var(--mainbg);
   margin-bottom: 16px;
 }
-.input-and-btn {
-  display: flex;
-  gap: 24px;
-}
+
 
 .foot-input {
   padding: 8px 16px;
@@ -638,9 +637,8 @@ button {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   transition: transform var(--hover-anim);
-  padding-top: 72px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 72px 24px 24px 24px;
+  
 }
 .modal-close-btn {
   position: absolute;
