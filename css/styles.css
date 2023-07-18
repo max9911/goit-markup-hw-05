@@ -550,9 +550,11 @@ button {
 .foot-three {
 }
 
-.foot-input-label {
+.subscribe {
   display: flex;
   gap: 24px;
+  
+  
 }
 .foot-input-label-name {
   font-size: 16px;
