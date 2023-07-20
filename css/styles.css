@@ -9,7 +9,9 @@
   --logo1color: #4d5ae5;
   --lightgrey: #8e8f99;
   --socialnet-link-hover: #31d0aa;
+
   --hover-anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 body {
@@ -769,6 +771,7 @@ button {
 .modal-privacy-checkbox {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   color: var(--lightgrey);
   font-size: 12px;
@@ -778,16 +781,23 @@ button {
 }
 
 .privacy-checkbox-icon {
-  display: inline-flex;
+
+  
   width: 16px;
   height: 16px;
-  align-items: center;
-  justify-content: center;
+  
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  fill: transparent;
+  
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: transparent;
+
 }
 
 .privacy-checkbox:checked + .modal-privacy-checkbox .privacy-checkbox-icon {
@@ -864,7 +874,8 @@ button {
   letter-spacing: 0.04em;
   color: var(--logo1color);
   background-color: var(--main-white);
-  transition: background-color var(--hover-anim), color var(--hover-anim);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .scroll-btn:hover,
